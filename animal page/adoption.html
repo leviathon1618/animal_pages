@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>Pet Adoption Survey</title>
+    <style>
+      #survey{
+      	background-color: #F5DEB3;
+          color:brown;
+        opacity: 0.7;
+      }
+      #survey:hover {
+          opacity: 1;
+      }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}      
+      
+      Body{
+      	background: url("https://thehappypuppysite.com/wp-content/uploads/2017/10/goldie.jpg") no-repeat;
+        background-size: 100%;
+
+        
+      }    
+      header {
+        background-color: #F5DEB3;
+        color: brown;
+      }
+    </style>
+  </head>
+  <body>
+  <header>
+    <h1> <center>
+    	Pet Adoption Survey
+      </center> </h1>
+  </header>
+    <nav id="navbar">
+<ul>
+  <li><a class="active" href="information.html">Pet Information</a></li>
+  <li><a href="adoption.html">Pet Adoption</a></li>
+
+</ul>
+    </nav>
+<div id="survey">
+  <center>
+  <fieldset>
+<legend> Personal Details </legend>
+
+<input type="text" placeholder="FirstName">
+<input type="text" placeholder="LastName"><br>
+<input type="email" placeholder="Email">
+<input type="number" placeholder="Mobile"><br/>
+<input type="date" name= "date" placeholder="dd/mm/yyyy"/>
+</fieldset>
+<fieldset>
+  
+<legend> Adopt a pet </legend>
+
+<input type="number" name="number" placeholder="Number to Adopt" min="0" max="10">
+<div class="input_control">
+<input type="radio" value="cat" name="pet1" onclick="cat()">Cat
+<input type="radio" value="dog" name="pet1" onclick="dog()">Dog
+<input type="radio" value="rodent" name="pet1" onclick="rodent()">Rodent
+<input type="radio" value="bird" name="pet1" onclick="bird()">Bird
+<input type="radio" value="fish" name="pet1" onclick="fish()">Fish <br>
+<input type="color" name="favcolor" value="#ff0000">
+  <input type="radio" value="male" name="sex1">Male
+  <input type="radio" value="female" name="sex1">Female
+  </div>
+  
+<div id="cat" style="display:none;">
+  <select>
+<option> Breed of Cat </option>
+<option> Tabby </option>
+<option> Persian </option>
+<option> Tortoiseshell </option>
+<option> Siamese </option>
+<option> Bengal </option>
+</select>
+</div>
+ 
+<div id="dog" style="display:none;">
+  <select>
+<option> Breed of Dog </option>
+<option> German Shepherd </option>
+<option> Dalmation </option>
+<option> Lab </option>
+<option> Chihuahua </option>
+<option> Poodle </option>
+</select>
+</div>
+  
+<div id="rodent" style="display:none;">
+  <select>
+<option> Type of Rodent </option>
+<option> Hamster </option>
+<option> Rabbit </option>
+<option> Guinea Pig </option>
+<option> Rat </option>
+<option> Mouse </option>
+</select>
+</div>
+  
+<div id="bird" style="display:none;">
+  <select>
+<option> Type of Bird </option>
+<option> African Grey </option>
+<option> Mckaw </option>
+<option> Lovebird </option>
+<option> Cockatoo </option>
+<option> Budgie </option>
+</select>
+  </div>
+  
+  <div id="fish" style="display:none;">
+<select>
+<option> Type of Fish </option>
+<option> Goldfish </option>
+<option> Koi Fish </option>
+<option> Guppy </option>
+<option> Green Swordtail </option>
+<option> Tetra </option>
+</select>
+  </div>
+</fieldset>
+    </center>
+</div>
+  
+
+
+
+  
+
+
+  <script>
+	function cat() {
+  var x = document.getElementById("cat");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+    
+	function dog() {
+  var x = document.getElementById("dog");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+    function rodent() {
+  var x = document.getElementById("rodent");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+    function bird() {
+      var x = document.getElementById("bird");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    
+    function fish() {
+  var x = document.getElementById("fish");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+ 
+  
+</body>
+</html>
